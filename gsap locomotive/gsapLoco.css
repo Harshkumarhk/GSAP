@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+/* main ko height ni deni hai locomotive me */
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(50, 68, 34);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(75, 124, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(49, 119, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(salmon, red);
+
+}

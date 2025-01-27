@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gsap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'gilroy';
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+        }
+
+        #box {
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+        }
+
+        #box1 {
+            height: 100px;
+            width: 100px;
+            background-color: greenyellow;
+        }
+
+        #box2 {
+            height: 100px;
+            width: 100px;
+            background-color: crimson;
+        }
+
+        #box3 {
+            height: 100px;
+            width: 100px;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+
+    <!-- second  video -->
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+        // this is 1st part (basic)
+        gsap.to("#box", {
+            x: 100,
+            rotate: 360,
+            backgroundColor: "blue",
+            duration: 2,
+            delay: 1
+        })
+
+        // gsap.from("#box",{
+        //     x:1000,
+        //     rotate:360,
+        //     backgroundColor:"blue",
+        //     duration:2,
+        //     delay:1
+        // })
+
+
+        // 2nd this is another program (scrollTrigger)
+        let tl = gsap.timeline()
+        tl.to("#box1", {
+            x: 1000,
+            rotate: 360,
+            scale: 0.5,
+            duration: 2,
+            delay: 1
+        })
+
+        tl.to("#box2", {
+            x: 1000,
+            rotate: 360,
+            scale: 0.5,
+            duration: 2,
+        })
+        tl.to("#box3", {
+            x: 1000,
+            rotate: 360,
+            scale: 0.5,
+            duration: 2,
+        })
+    </script>
+</body>
+
+</html>
